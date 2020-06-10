@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
-  <!-- Track your repo here -->
+  <!-- Track AOSP repo here -->
   <remote  name="aosp"
            fetch=".."
            review="https://android-review.googlesource.com/" />
@@ -9,10 +9,11 @@
            remote="aosp"
            sync-j="4" />
 
-  <remote  name="lineage"
+  <!-- Track LineageOS repo here -->
+  <!-- <remote  name="lineage"
            fetch="https://github.com/LineageOS"
            review="review.lineageos.org"
-           revision="refs/heads/cm-14.1" />
+           revision="refs/heads/cm-14.1" /> -->
 
   <!-- Android Open Source Project -->
   <project path="build" name="platform/build" groups="pdk,tradefed" >
@@ -557,6 +558,6 @@
   <project path="tools/tradefederation" name="platform/tools/tradefederation" groups="notdefault,tradefed" />
 
   <!-- Include LineageOS stuff -->
-  <include name="snippets/lineage.xml" />
+  <!-- <include name="snippets/lineage.xml" /> -->
 
 </manifest>
